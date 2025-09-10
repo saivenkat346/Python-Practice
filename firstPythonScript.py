@@ -28,7 +28,7 @@
 # print(str.casefold())
 # print(str.count('a'), "it counts the given  charecters in the string and it is case sensitive")
 
-# tup = (11,33,44,22,"sd") 
+# tup = (11,33,44,22,"sd")
 # list = [3423,323,22,4,2,243]
 
 # for i in range(10):
@@ -42,7 +42,6 @@
 
 # range function has start stop and step where start is where you want to start and stop is where you want to end and step is how many times you want to increment elements
 # by default range function takes stop if you give single number which means it starts from zero to the stop value that you have specified and this function returns a collection
-
 
 
 # x =[0,1,2,3,4,5,6,7,8]
@@ -65,39 +64,29 @@
 # s = {4,32,2,2} #this is a set of integer values
 # s2= {4,2,11,44} #this is also the set of integer values
 # print(s ,"s set")
-# print(s2, "s2 set") 
+# print(s2, "s2 set")
 # print(s.union(s2), "union of s and s2")
 # print(s.intersection(s2) ,"intersection of s and s2")
 # print(s.difference(s2),"deference of s and s2")
-
 
 
 # # comprehension
 # x = [x for x in range(5)]
 
 
-
-
-def order_pizza(size,*toppings,**details):
-    print('Your Pizza size is',size)
-    print('Your Toppings are: ')
-    for topping in toppings :
+def order_pizza(size, *toppings, **details):
+    print("Your Pizza size is", size)
+    print("Your Toppings are: ")
+    for topping in toppings:
         print(topping)
 
-    if(details["delivery"]=="door"):
+    if details["delivery"] == "door":
         print("Your Pizza will be deliverd to your home")
-    elif(details["delivery"]=="pickup"):
+    elif details["delivery"] == "pickup":
         print("Your Pizza is ready please collect from the counter")
-    
 
-    if(details["cost"]!=None):
-        print("Total Price is:",details["cost"])
-
+    if details["cost"] != None:
+        print("Total Price is:", details["cost"])
 
 
-order_pizza("large","peperoni","onion","tomato",delivery="door",cost=400)
-
-
-
-
-
+order_pizza("large", "peperoni", "onion", "tomato", delivery="door", cost=400)
