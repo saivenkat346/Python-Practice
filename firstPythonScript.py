@@ -74,19 +74,19 @@
 # x = [x for x in range(5)]
 
 
-def order_pizza(size, *toppings, **details):
-    print("Your Pizza size is", size)
-    print("Your Toppings are: ")
-    for topping in toppings:
-        print(topping)
+# def order_pizza(size, *toppings, **details):
+#     print("Your Pizza size is", size)
+#     print("Your Toppings are: ")
+#     for topping in toppings:
+#         print(topping)
 
-    if details["delivery"] == "door":
-        print("Your Pizza will be deliverd to your home")
-    elif details["delivery"] == "pickup":
-        print("Your Pizza is ready please collect from the counter")
+#     if details["delivery"] == "door":
+#         print("Your Pizza will be deliverd to your home")
+#     elif details["delivery"] == "pickup":
+#         print("Your Pizza is ready please collect from the counter")
 
-    if details["cost"] != None:
-        print("Total Price is:", details["cost"])
+#     if details["cost"] != None:
+#         print("Total Price is:", details["cost"])
 
 
-order_pizza("large", "peperoni", "onion", "tomato", delivery="door", cost=400)
+# order_pizza("large", "peperoni", "onion", "tomato", delivery="door", cost=400)
