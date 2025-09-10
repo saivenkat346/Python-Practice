@@ -61,10 +61,41 @@
 
 # print(sliced)
 
+# x = set()  # this represent empty set
+# s = {4,32,2,2} #this is a set of integer values
+# s2= {4,2,11,44} #this is also the set of integer values
+# print(s ,"s set")
+# print(s2, "s2 set") 
+# print(s.union(s2), "union of s and s2")
+# print(s.intersection(s2) ,"intersection of s and s2")
+# print(s.difference(s2),"deference of s and s2")
+
+
+
+# # comprehension
+# x = [x for x in range(5)]
 
 
 
 
+def order_pizza(size,*toppings,**details):
+    print('Your Pizza size is',size)
+    print('Your Toppings are: ')
+    for topping in toppings :
+        print(topping)
+
+    if(details["delivery"]=="door"):
+        print("Your Pizza will be deliverd to your home")
+    elif(details["delivery"]=="pickup"):
+        print("Your Pizza is ready please collect from the counter")
+    
+
+    if(details["cost"]!=None):
+        print("Total Price is:",details["cost"])
+
+
+
+order_pizza("large","peperoni","onion","tomato",delivery="door",cost=400)
 
 
 
